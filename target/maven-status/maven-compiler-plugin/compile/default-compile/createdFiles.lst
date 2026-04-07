@@ -1,0 +1,14 @@
+dao\ArtistDAO.class
+servlet\ArtistServlet.class
+model\Artist.class
+dao\PlaylistDAO.class
+util\DBConnection.class
+model\Genre.class
+servlet\AlbumServlet.class
+servlet\HomeServlet.class
+dao\AlbumDAO.class
+model\Playlist.class
+dao\GenreDAO.class
+model\Album.class
+servlet\GenreServlet.class
+servlet\PlaylistServlet.class

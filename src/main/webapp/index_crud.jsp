@@ -33,7 +33,7 @@
 
                 <!-- Card Artistas -->
                 <div class="card card-section">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h3 class="card-title-primary " style="color: red;"> Artistas</h3>
 
                         <a href="artist" class="btn btn-primary card-button">Ver Artistas</a>
@@ -42,7 +42,7 @@
 
                 <!-- Card Géneros -->
                 <div class="card card-section">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h3 class="card-title-secondary" style="color: green;"> Géneros</h3>
 
                         <a href="genre" class="btn btn-primary card-button">Ver Géneros</a>
@@ -51,7 +51,7 @@
 
                 <!-- Card Álbumes -->
                 <div class="card card-section">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h3 class="card-title-warning" style="color: orange;"> Álbumes</h3>
 
                         <a href="album" class="btn btn-primary card-button">Ver Álbumes</a>
@@ -60,7 +60,7 @@
 
                 <!-- Card Playlists -->
                 <div class="card card-section">
-                    <div class="card-body">
+                    <div class="card-body text-center">
                         <h3 class="card-title-danger" style="color: blue;"> Playlists</h3>
 
                         <a href="playlist" class="btn btn-primary card-button">Ver Playlists</a>
