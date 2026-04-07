@@ -66,8 +66,7 @@
             <tr>
                 <td><%= a.getPlaylistId() %></td>
                 <td><%= a.getName() %></td>
-                <td>
-
+                <td style="display: flex; gap: 8px; flex-wrap: wrap;">
                     <a href="playlist?action=edit&id=<%= a.getPlaylistId() %>" class="btn btn-warning btn-sm">Editar</a>
                     <a href="playlist?action=delete&id=<%= a.getPlaylistId() %>" class="btn btn-danger btn-sm">Borrar</a>
                 </td>

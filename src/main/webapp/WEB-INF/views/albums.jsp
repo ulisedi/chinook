@@ -77,7 +77,7 @@
                 <td><%= a.getAlbumId() %></td>
                 <td><%= a.getTitle() %></td>
                 <td><%= a.getArtistName() %></td>
-                <td>
+                <td style="display: flex; gap: 8px; flex-wrap: wrap;">
                     <a href="album?action=edit&id=<%= a.getAlbumId() %>" class="btn btn-warning btn-sm">Editar</a>
                     <a href="album?action=delete&id=<%= a.getAlbumId() %>" class="btn btn-danger btn-sm">Borrar</a>
                 </td>

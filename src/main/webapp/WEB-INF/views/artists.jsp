@@ -64,7 +64,7 @@
             <tr>
                 <td><%= a.getArtistId() %></td>
                 <td><%= a.getName() %></td>
-                <td>
+                <td style="display: flex; gap: 8px; flex-wrap: wrap;">
                     <a href="artist?action=edit&id=<%= a.getArtistId() %>" class="btn btn-warning btn-sm">Editar</a>
                     <a href="artist?action=delete&id=<%= a.getArtistId() %>" class="btn btn-danger btn-sm">Borrar</a>
                 </td>

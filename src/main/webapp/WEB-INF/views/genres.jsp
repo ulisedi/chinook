@@ -64,8 +64,7 @@
             <tr>
                 <td><%= a.getGenreId() %></td>
                 <td><%= a.getName() %></td>
-                <td>
-                   
+                <td style="display: flex; gap: 8px; flex-wrap: wrap;">
                     <a href="genre?action=edit&id=<%= a.getGenreId() %>" class="btn btn-warning btn-sm">Editar</a>
                     <a href="genre?action=delete&id=<%= a.getGenreId() %>" class="btn btn-danger btn-sm">Borrar</a>
                 </td>
