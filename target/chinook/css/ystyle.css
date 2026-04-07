@@ -11,10 +11,10 @@
     --yt-button-hover: #0453b7;
     --yt-sidebar-bg: #f9f9f9;
     /* Tonos de morado para tablas */
-    --table-row-odd: #6b5b8a;
-    --table-row-even: rgb(114, 97, 163);
-    --table-row-odd-hover: #6b5b8a;
-    --table-row-even-hover: rgb(114, 97, 163);
+    --table-row-odd: #a09ba8;
+    --table-row-even: rgb(191, 178, 230);
+    --table-row-odd-hover: #a09ba8;
+    --table-row-even-hover: rgb(191, 178, 230);
 }
 
 [data-bs-theme="dark"] {

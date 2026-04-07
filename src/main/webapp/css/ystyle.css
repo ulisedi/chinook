@@ -28,10 +28,10 @@
     --yt-button-hover: #0453b7;
     --yt-sidebar-bg: #212121;
     /* Tonos de morado oscuro para tablas en modo oscuro */
-    --table-row-odd: #3d2852;
-    --table-row-even: #4a3260;
-    --table-row-odd-hover: #4a3260;
-    --table-row-even-hover: #57396d;
+    --table-row-odd: #a09ba8;
+    --table-row-even: rgb(191, 178, 230);
+    --table-row-odd-hover: #a09ba8;
+    --table-row-even-hover: rgb(191, 178, 230);
 }
 
 * {
