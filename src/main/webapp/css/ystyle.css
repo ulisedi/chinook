@@ -932,15 +932,15 @@ a:hover {
 }
 
 .table-striped > tbody > tr:nth-of-type(odd) > * {
-    --bs-table-bg: #c084fc;
-    --bs-table-striped-bg: #c084fc;
-    background-color: #c084fc !important;
+    --bs-table-bg: #504953;
+    --bs-table-striped-bg: #868188;
+    background-color: #b4b4b6 !important;
     color: white;
 }
 
 .table-striped > tbody > tr:nth-of-type(even) > * {
-    --bs-table-bg: #e9d5ff;
-    --bs-table-striped-bg: #e9d5ff;
-    background-color: #e9d5ff !important;
+    --bs-table-bg: #dbdbdb;
+    --bs-table-striped-bg: #dddcdd;
+    background-color: #d7d4da !important;
     color: black;
 }
