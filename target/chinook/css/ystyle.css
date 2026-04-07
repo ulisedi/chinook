@@ -10,11 +10,11 @@
     --yt-button-bg: #065fd4;
     --yt-button-hover: #0453b7;
     --yt-sidebar-bg: #f9f9f9;
-    /* Tonos de morado para tablas */
-    --table-row-odd: #a09ba8;
-    --table-row-even: rgb(191, 178, 230);
-    --table-row-odd-hover: #a09ba8;
-    --table-row-even-hover: rgb(191, 178, 230);
+    /* Tonos de gris para tablas */
+    --table-row-odd: #f5f5f5;
+    --table-row-even: #eeeeee;
+    --table-row-odd-hover: #e8e8e8;
+    --table-row-even-hover: #e8e8e8;
 }
 
 [data-bs-theme="dark"] {
@@ -27,11 +27,11 @@
     --yt-button-bg: #065fd4;
     --yt-button-hover: #0453b7;
     --yt-sidebar-bg: #212121;
-    /* Tonos de morado oscuro para tablas en modo oscuro */
-    --table-row-odd: #a09ba8;
-    --table-row-even: rgb(191, 178, 230);
-    --table-row-odd-hover: #a09ba8;
-    --table-row-even-hover: rgb(191, 178, 230);
+    /* Tonos de gris oscuro para tablas en modo oscuro */
+    --table-row-odd: #2a2a2a;
+    --table-row-even: #333333;
+    --table-row-odd-hover: #404040;
+    --table-row-even-hover: #404040;
 }
 
 * {
