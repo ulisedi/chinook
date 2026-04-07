@@ -27,8 +27,6 @@
         <img src="${pageContext.request.contextPath}/img/logo.ico" alt="Chinook Logo" class="navbar-logo">
         <span class="navbar-brand"> Chinook</span>
     </a>
-    <div style="flex-grow: 1;"></div>
-    
 
     <button class="theme-toggle-navbar" title="Cambiar a modo oscuro">
         <i class="fas fa-moon"></i>

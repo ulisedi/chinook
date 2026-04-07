@@ -5,6 +5,7 @@ public class Album {
     private int albumId;
     private String title;
     private int artistId;
+    private String artistName;
 
     public Album() {
     }
@@ -13,6 +14,13 @@ public class Album {
         this.albumId = albumId;
         this.title = title;
         this.artistId = artistId;
+    }
+
+    public Album(int albumId, String title, int artistId, String artistName) {
+        this.albumId = albumId;
+        this.title = title;
+        this.artistId = artistId;
+        this.artistName = artistName;
     }
 
     public int getAlbumId() {
@@ -38,5 +46,14 @@ public class Album {
     public void setArtistId(int artistId) {
         this.artistId = artistId;
     }
+
+    public String getArtistName() {
+        return artistName;
+    }
+
+    public void setArtistName(String artistName) {
+        this.artistName = artistName;
+    }
 }
+     
      

@@ -15,7 +15,8 @@ public class AlbumDAO {
 
         try (Connection con = DBConnection.getConnection()) {
 
-            String sql = "SELECT * FROM Album";
+            String sql = "SELECT a.AlbumId, a.Title, a.ArtistId, ar.Name FROM Album a " +
+                        "LEFT JOIN Artist ar ON a.ArtistId = ar.ArtistId";
             PreparedStatement ps = con.prepareStatement(sql);
 
             ResultSet rs = ps.executeQuery();
@@ -26,6 +27,8 @@ public class AlbumDAO {
                 a.setAlbumId(rs.getInt("AlbumId"));
                 a.setTitle(rs.getString("Title"));
                 a.setArtistId(rs.getInt("ArtistId"));
+                String artistName = rs.getString("Name");
+                a.setArtistName(artistName != null ? artistName : "Sin artista");
                 list.add(a);
             }
 

@@ -1,8 +1,6 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import="java.util.List"%>
 <%@ page import="model.Album"%>
-<%@ page import="model.Artist"%>
-<%@ page import="dao.ArtistDAO"%>
 
 <%
     // La lista de albums debe venir desde el servlet
@@ -13,8 +11,6 @@
         response.sendRedirect("album");
         return;
     }
-    
-    ArtistDAO artistDAO = new ArtistDAO();
 %>
 
 <!DOCTYPE html>
@@ -31,8 +27,6 @@
         <img src="${pageContext.request.contextPath}/img/logo.ico" alt="Chinook Logo" class="navbar-logo">
         <span class="navbar-brand"> Chinook</span>
     </a>
-    <div style="flex-grow: 1;"></div>
-    
     <button class="theme-toggle-navbar" title="Cambiar a modo oscuro">
         <i class="fas fa-moon"></i>
     </button>
@@ -52,6 +46,19 @@
             <i class="fas fa-search"></i>
             <input type="text" id="album-search" class="form-control" placeholder="Buscar álbum...">
         </div>
+        
+        <div class="sort-options">
+            <label for="sort-select">Ordenar por:</label>
+            <select id="sort-select" class="form-control">
+                <option value="">Selecciona una opción</option>
+                <option value="id-asc">ID ↑ (Ascendente)</option>
+                <option value="id-desc">ID ↓ (Descendente)</option>
+                <option value="título-asc">Título ↑ (A-Z)</option>
+                <option value="título-desc">Título ↓ (Z-A)</option>
+                <option value="artista-asc">Artista ↑ (A-Z)</option>
+                <option value="artista-desc">Artista ↓ (Z-A)</option>
+            </select>
+        </div>
     </div>
 
     <% if(list != null && !list.isEmpty()) { %>
@@ -66,14 +73,10 @@
         </thead>
         <tbody id="album-table-body">
             <% for(Album a : list) { %>
-            <%
-                Artist artist = artistDAO.getArtistById(a.getArtistId());
-                String artistName = artist != null ? artist.getName() : "Sin artista";
-            %>
             <tr>
                 <td><%= a.getAlbumId() %></td>
                 <td><%= a.getTitle() %></td>
-                <td><%= artistName %></td>
+                <td><%= a.getArtistName() %></td>
                 <td>
                     <a href="album?action=edit&id=<%= a.getAlbumId() %>" class="btn btn-warning btn-sm">Editar</a>
                     <a href="album?action=delete&id=<%= a.getAlbumId() %>" class="btn btn-danger btn-sm">Borrar</a>

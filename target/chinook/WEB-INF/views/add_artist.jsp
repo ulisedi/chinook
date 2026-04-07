@@ -11,7 +11,7 @@
 <nav class="navbar">
     <a href="${pageContext.request.contextPath}/index_crud.jsp" class="navbar-brand-link">
         <img src="${pageContext.request.contextPath}/img/logo.ico" alt="Chinook Logo" class="navbar-logo">
-        <span class="navbar-brand">▶ Chinook</span>
+        <span class="navbar-brand"> Chinook</span>
     </a>
     <div style="flex-grow: 1;"></div>
     
