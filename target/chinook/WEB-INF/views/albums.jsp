@@ -43,19 +43,6 @@
             <i class="fas fa-search"></i>
             <input type="text" id="album-search" class="form-control" placeholder="Buscar álbum...">
         </div>
-        
-        <div class="sort-options">
-            <label for="sort-select">Ordenar por:</label>
-            <select id="sort-select" class="form-control">
-                <option value="">Selecciona una opción</option>
-                <option value="id-asc">ID ↑ (Ascendente)</option>
-                <option value="id-desc">ID ↓ (Descendente)</option>
-                <option value="título-asc">Título ↑ (A-Z)</option>
-                <option value="título-desc">Título ↓ (Z-A)</option>
-                <option value="artista-asc">Artista ↑ (A-Z)</option>
-                <option value="artista-desc">Artista ↓ (Z-A)</option>
-            </select>
-        </div>
     </div>
 
     <% if(list != null && !list.isEmpty()) { %>

@@ -50,7 +50,5 @@
         <a href="album" class="btn btn-secondary">Volver al listado</a>
     </form>
 </div>
-
-<!-- JS de tema noche/día -->
 </body>
 </html>
