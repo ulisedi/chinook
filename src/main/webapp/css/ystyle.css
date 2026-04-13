@@ -265,19 +265,19 @@ h3, h4, h5, h6 {
 }
 
 .table tbody tr:nth-child(odd) {
-    background-color: var(--table-row-odd);
+    background-color: #ffffff !important;
 }
 
 .table tbody tr:nth-child(even) {
-    background-color: var(--table-row-even);
+    background-color: #f0f0f0 !important;
 }
 
 .table tbody tr:nth-child(odd):hover {
-    background-color: var(--table-row-odd-hover);
+    background-color: #f0f0f0 !important;
 }
 
 .table tbody tr:nth-child(even):hover {
-    background-color: var(--table-row-even-hover);
+    background-color: #e8e8e8 !important;
 }
 
 .table tbody tr:last-child td {
