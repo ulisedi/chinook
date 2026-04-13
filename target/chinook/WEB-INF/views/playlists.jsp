@@ -28,10 +28,6 @@
         <img src="${pageContext.request.contextPath}/img/logo.ico" alt="Chinook Logo" class="navbar-logo">
         <span class="navbar-brand"> Chinook</span>
     </a>
-
-    <button class="theme-toggle-navbar" title="Cambiar a modo oscuro">
-        <i class="fas fa-moon"></i>
-    </button>
 </nav>
 
 <div class="container mt-5">
@@ -85,8 +81,6 @@
 
 <script src="${pageContext.request.contextPath}/js/search.js"></script>
 
-
-<script src="${pageContext.request.contextPath}/js/theme-toggle.js"></script>
 
 <script>
 

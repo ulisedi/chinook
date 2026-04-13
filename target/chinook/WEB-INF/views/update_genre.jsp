@@ -24,12 +24,6 @@
         <img src="${pageContext.request.contextPath}/img/logo.ico" alt="Chinook Logo" class="navbar-logo">
         <span class="navbar-brand"> Chinook</span>
     </a>
-    <div style="flex-grow: 1;"></div>
-    
-    <!-- Toggle de tema -->
-    <button class="theme-toggle-navbar" title="Cambiar a modo oscuro">
-        <i class="fas fa-moon"></i>
-    </button>
 </nav>
 
 <div class="container mt-5">
@@ -51,6 +45,5 @@
 </div>
 
 <!-- JS de tema noche/día -->
-<script src="${pageContext.request.contextPath}/js/theme-toggle.js"></script>
 </body>
 </html>

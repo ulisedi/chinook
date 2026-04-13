@@ -18,11 +18,6 @@
                 <span class="navbar-brand"> Chinook</span>
             </a>
             <div class="navbar-spacer"></div>
-
-            <!-- Toggle de tema -->
-            <button class="theme-toggle-navbar" title="Cambiar a modo oscuro">
-                <i class="fas fa-moon"></i>
-            </button>
         </nav>
 
         <div class="container">
@@ -76,7 +71,5 @@
     </html>
     <!-- JS de Bootstrap local -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- JS de tema noche/día -->
-    <script src="js/theme-toggle.js"></script>
     <!-- JS de búsqueda -->
     <script src="js/search.js"></script>
