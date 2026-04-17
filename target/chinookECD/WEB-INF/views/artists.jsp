@@ -35,11 +35,10 @@
     <h2 class="mb-4">Listado de <span style="color: #00aae4;">Artistas</span></h2>
 
     <div class="mb-3">
-   
         <a href="index_crud.jsp" class="btn btn-secondary">Volver al menú</a>
         <a href="artist?action=new" class="btn btn-success">Añadir Artista</a>
     </div>
-
+ <!-- Busqueda de artistas -->
     <div class="search-sort-container">
         <div class="search-input-wrapper">
             <i class="fas fa-search"></i>
