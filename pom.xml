@@ -51,7 +51,7 @@
     </dependencies>
 
     <build>
-        <finalName>chinook</finalName>
+        <finalName>chinookECD</finalName>
 
         <plugins>
             <!-- Plugin para WAR -->
