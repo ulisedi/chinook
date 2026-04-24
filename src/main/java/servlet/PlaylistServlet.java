@@ -48,7 +48,7 @@ public class PlaylistServlet extends HttpServlet {
             throws ServletException, IOException {
         List<Playlist> list = dao.getAllPlaylists();
         request.setAttribute("playlists", list);
-        request.getRequestDispatcher("WEB-INF/views/playlists.jsp")
+        request.getRequestDispatcher("WEB-INF/views/playlist/playlists.jsp")
                .forward(request, response);
     }
 
@@ -56,7 +56,7 @@ public class PlaylistServlet extends HttpServlet {
             throws ServletException, IOException {
         Playlist playlist = new Playlist();
         request.setAttribute("playlist", playlist);
-        request.getRequestDispatcher("WEB-INF/views/add_playlist.jsp")
+        request.getRequestDispatcher("WEB-INF/views/playlist/add_playlist.jsp")
                .forward(request, response);
     }
 
@@ -69,7 +69,7 @@ public class PlaylistServlet extends HttpServlet {
             int id = Integer.parseInt(idParam);
             Playlist playlist = dao.getPlaylistById(id);
             request.setAttribute("playlist", playlist);
-            request.getRequestDispatcher("WEB-INF/views/edit_playlist.jsp")
+            request.getRequestDispatcher("WEB-INF/views/playlist/edit_playlist.jsp")
                    .forward(request, response);
         } else {
             response.sendRedirect("playlist");

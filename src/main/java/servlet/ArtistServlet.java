@@ -65,7 +65,7 @@ public class ArtistServlet extends HttpServlet {
             throws ServletException, IOException {
         List<Artist> list = dao.getAllArtists();
         request.setAttribute("artists", list);
-        request.getRequestDispatcher("WEB-INF/views/artists.jsp")
+        request.getRequestDispatcher("WEB-INF/views/artist/artists.jsp")
                .forward(request, response);
     }
 
@@ -74,7 +74,7 @@ public class ArtistServlet extends HttpServlet {
             throws ServletException, IOException {
         Artist artist = new Artist();
         request.setAttribute("artist", artist);
-        request.getRequestDispatcher("WEB-INF/views/add_artist.jsp")
+        request.getRequestDispatcher("WEB-INF/views/artist/add_artist.jsp")
                .forward(request, response);
     }
 
@@ -88,7 +88,7 @@ public class ArtistServlet extends HttpServlet {
             int id = Integer.parseInt(idParam);
             Artist artist = dao.getArtistById(id);
             request.setAttribute("artist", artist);
-            request.getRequestDispatcher("WEB-INF/views/edit_artist.jsp")
+            request.getRequestDispatcher("WEB-INF/views/artist/edit_artist.jsp")
                    .forward(request, response);
         } else {
             response.sendRedirect("artist");

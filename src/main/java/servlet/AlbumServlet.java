@@ -52,7 +52,7 @@ public class AlbumServlet extends HttpServlet {
             throws ServletException, IOException {
         List<Album> list = dao.getAllAlbum();
         request.setAttribute("albums", list);
-        request.getRequestDispatcher("WEB-INF/views/albums.jsp")
+        request.getRequestDispatcher("WEB-INF/views/album/albums.jsp")
                .forward(request, response);
     }
 
@@ -62,7 +62,7 @@ public class AlbumServlet extends HttpServlet {
         List<Artist> artists = artistDAO.getAllArtists();
         request.setAttribute("album", album);
         request.setAttribute("artists", artists);
-        request.getRequestDispatcher("WEB-INF/views/add_album.jsp")
+        request.getRequestDispatcher("WEB-INF/views/album/add_album.jsp")
                .forward(request, response);
     }
 
@@ -77,7 +77,7 @@ public class AlbumServlet extends HttpServlet {
             List<Artist> artists = artistDAO.getAllArtists();
             request.setAttribute("album", album);
             request.setAttribute("artists", artists);
-            request.getRequestDispatcher("WEB-INF/views/edit_album.jsp")
+            request.getRequestDispatcher("WEB-INF/views/album/edit_album.jsp")
                    .forward(request, response);
         } else {
             response.sendRedirect("album");

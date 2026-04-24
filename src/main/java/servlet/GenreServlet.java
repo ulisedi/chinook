@@ -48,7 +48,7 @@ public class GenreServlet extends HttpServlet {
             throws ServletException, IOException {
         List<Genre> list = dao.getAllGenre();
         request.setAttribute("genres", list);
-        request.getRequestDispatcher("WEB-INF/views/genres.jsp")
+        request.getRequestDispatcher("WEB-INF/views/genre/genres.jsp")
                .forward(request, response);
     }
 
@@ -56,7 +56,7 @@ public class GenreServlet extends HttpServlet {
             throws ServletException, IOException {
         Genre genre = new Genre();
         request.setAttribute("genre", genre);
-        request.getRequestDispatcher("WEB-INF/views/add_genre.jsp")
+        request.getRequestDispatcher("WEB-INF/views/genre/add_genre.jsp")
                .forward(request, response);
     }
 
@@ -69,7 +69,7 @@ public class GenreServlet extends HttpServlet {
             int id = Integer.parseInt(idParam);
             Genre genre = dao.getGenreById(id);
             request.setAttribute("genre", genre);
-            request.getRequestDispatcher("WEB-INF/views/edit_genre.jsp")
+            request.getRequestDispatcher("WEB-INF/views/genre/edit_genre.jsp")
                    .forward(request, response);
         } else {
             response.sendRedirect("genre");

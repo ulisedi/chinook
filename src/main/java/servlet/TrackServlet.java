@@ -90,7 +90,7 @@ public class TrackServlet extends HttpServlet {
         request.setAttribute("filterId", filterId);
         request.setAttribute("filterName", filterName);
 
-        request.getRequestDispatcher("/WEB-INF/views/track-list.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/views/track/tracks.jsp").forward(request, response);
     }
 
     private void viewTrack(HttpServletRequest request, HttpServletResponse response)
