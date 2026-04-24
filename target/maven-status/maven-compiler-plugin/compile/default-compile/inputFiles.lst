@@ -1,9 +1,11 @@
 D:\ECD\Programacion\chinook\src\main\java\model\Album.java
 D:\ECD\Programacion\chinook\src\main\java\model\Genre.java
+D:\ECD\Programacion\chinook\src\main\java\dao\TrackDAO.java
 D:\ECD\Programacion\chinook\src\main\java\servlet\PlaylistServlet.java
 D:\ECD\Programacion\chinook\src\main\java\model\Playlist.java
 D:\ECD\Programacion\chinook\src\main\java\dao\AlbumDAO.java
 D:\ECD\Programacion\chinook\src\main\java\model\Artist.java
+D:\ECD\Programacion\chinook\src\main\java\model\Track.java
 D:\ECD\Programacion\chinook\src\main\java\servlet\ArtistServlet.java
 D:\ECD\Programacion\chinook\src\main\java\util\DBConnection.java
 D:\ECD\Programacion\chinook\src\main\java\dao\ArtistDAO.java
@@ -12,3 +14,4 @@ D:\ECD\Programacion\chinook\src\main\java\dao\PlaylistDAO.java
 D:\ECD\Programacion\chinook\src\main\java\servlet\AlbumServlet.java
 D:\ECD\Programacion\chinook\src\main\java\dao\GenreDAO.java
 D:\ECD\Programacion\chinook\src\main\java\servlet\GenreServlet.java
+D:\ECD\Programacion\chinook\src\main\java\servlet\TrackServlet.java

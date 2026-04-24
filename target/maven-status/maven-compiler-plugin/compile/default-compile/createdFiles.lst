@@ -1,9 +1,12 @@
 dao\ArtistDAO.class
 servlet\ArtistServlet.class
 model\Artist.class
+model\Track.class
 dao\PlaylistDAO.class
 util\DBConnection.class
+servlet\TrackServlet.class
 model\Genre.class
+dao\TrackDAO.class
 servlet\AlbumServlet.class
 servlet\HomeServlet.class
 dao\AlbumDAO.class

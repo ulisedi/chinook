@@ -69,6 +69,15 @@
                 </div>
             </div>
 
+            <!-- Card Tracks -->
+            <div class="card card-section">
+                <div class="card-body text-center">
+                    <h3 class="card-title-info" style="color: purple;"> Tracks</h3>
+                    
+                    <a href="track" class="btn btn-primary card-button">Ver Tracks</a>
+                </div>
+            </div>
+
         </div>
         
 
